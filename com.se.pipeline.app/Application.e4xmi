@@ -1,8 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmi:id="_zK3CIVAbEeqL4LEe7HDp6A" elementId="org.eclipse.e4.application" bindingContexts="_zK3CIFAbEeqL4LEe7HDp6A">
-  <children xsi:type="basic:TrimmedWindow" xmi:id="_emo6sFAcEeqL4LEe7HDp6A" elementId="com.se.pipeline.app.trimmedwindow.2" label="2" x="100" y="100" width="100" height="100">
-    <children xsi:type="basic:Part" xmi:id="_ZYpWYFAdEeqkypudNPxcKQ" elementId="com.se.pipeline.app.part.0"/>
+  <children xsi:type="basic:TrimmedWindow" xmi:id="_eqHd8FBHEeqLPsmg-X2NKA" elementId="com.se.pipeline.app.trimmedwindow.top" label="top" x="0" y="0" width="1920" height="540">
+    <children xsi:type="basic:PartSashContainer" xmi:id="_5OGS8FBHEeqLPsmg-X2NKA" elementId="com.se.pipeline.app.partsashcontainer.0">
+      <children xsi:type="basic:Part" xmi:id="__T3-YFBHEeqLPsmg-X2NKA" elementId="com.se.pipeline.app.part.overview" contributionURI="bundleclass://com.se.pipeline.app/com.se.pipeline.uiClasses.Overview" label="overview"/>
+      <children xsi:type="basic:Part" xmi:id="_Dw90wFBIEeqLPsmg-X2NKA" elementId="com.se.pipeline.app.part.scroll" contributionURI="bundleclass://com.se.pipeline.app/com.se.pipeline.uiClasses.Scroll" label="scroll"/>
+      <children xsi:type="basic:Part" xmi:id="_FvFHQFBIEeqLPsmg-X2NKA" elementId="com.se.pipeline.app.part.alarms" contributionURI="bundleclass://com.se.pipeline.app/com.se.pipeline.uiClasses.Alarms" label="alarms"/>
+    </children>
   </children>
+  <children xsi:type="basic:TrimmedWindow" xmi:id="_laciQFBHEeqLPsmg-X2NKA" elementId="com.se.pipeline.app.trimmedwindow.lowerleft" label="lowerleft" x="0" y="540" width="960" height="540"/>
+  <children xsi:type="basic:TrimmedWindow" xmi:id="_ruesIFBHEeqLPsmg-X2NKA" elementId="com.se.pipeline.app.trimmedwindow.lowerright" label="lowerright" x="960" y="540" width="960" height="540"/>
   <rootContext xmi:id="_zK3CIFAbEeqL4LEe7HDp6A" elementId="org.eclipse.ui.contexts.dialogAndWindow" name="In Dialog and Windows">
     <children xmi:id="_zK3CIlAbEeqL4LEe7HDp6A" elementId="org.eclipse.ui.contexts.window" name="In Windows"/>
     <children xmi:id="_zK3CI1AbEeqL4LEe7HDp6A" elementId="org.eclipse.ui.contexts.dialog" name="In Dialogs"/>
