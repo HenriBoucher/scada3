@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Scadahistory
+Bundle-SymbolicName: com.se.pipeline.scadahistory
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: com.se.pipeline.scadahistory.Activator
+Bundle-Vendor: SE
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Automatic-Module-Name: com.se.pipeline.scadahistory
+Import-Package: org.osgi.framework;version="1.3.0"
+Bundle-ActivationPolicy: lazy
+Require-Bundle: org.eclipse.equinox.common;bundle-version="3.10.100",
+ org.eclipse.e4.core.services;bundle-version="2.1.200",
+ javax.inject;bundle-version="1.0.0",
+ com.se.pipeline.scadaevent;bundle-version="1.0.0"

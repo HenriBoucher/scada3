@@ -28,7 +28,7 @@
 <stringAttribute key="org.eclipse.jdt.launching.SOURCE_PATH_PROVIDER" value="org.eclipse.pde.ui.workbenchClasspathProvider"/>
 <stringAttribute key="org.eclipse.jdt.launching.VM_ARGUMENTS" value="-Dorg.osgi.framework.bundle.parent=ext"/>
 <stringAttribute key="pde.version" value="3.3"/>
-<stringAttribute key="product" value=""/>
+<stringAttribute key="product" value="com.se.pipeline.app.product"/>
 <stringAttribute key="productFile" value="/com.se.pipeline.app.product/com.se.pipeline.app.product.product"/>
 <setAttribute key="selected_features">
 <setEntry value="com.se.pipeline.app.feature:default"/>
