@@ -7,7 +7,7 @@
    </configIni>
 
    <launcherArgs>
-      <programArgs>-nosplash -clearPersistedState
+      <programArgs>-nosplash -clearPersistedState -console
       </programArgs>
       <vmArgs>-Dorg.osgi.framework.bundle.parent=ext
       </vmArgs>
