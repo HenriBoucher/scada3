@@ -5,6 +5,7 @@ import java.util.Dictionary;
 import javax.inject.Inject;
 
 import org.eclipse.e4.core.services.events.IEventBroker;
+import org.osgi.framework.Bundle;
 import org.osgi.framework.BundleActivator;
 import org.osgi.framework.BundleContext;
 import org.osgi.framework.Constants;
@@ -22,7 +23,10 @@ public class Activator implements BundleActivator {
 
 	public void start(BundleContext bundleContext) throws Exception {
 		Activator.context = bundleContext;
-
+		Bundle[] allbundles = bundleContext.getBundles();
+		for (Bundle thisbundle : allbundles) {
+			System.out.println(thisbundle + thisbundle.getSymbolicName() + thisbundle.getBundleId());
+		}
 		Dictionary<String, String> headers = bundleContext.getBundle().getHeaders();
     	String requireBundle = headers.get(Constants.REQUIRE_BUNDLE);
 
