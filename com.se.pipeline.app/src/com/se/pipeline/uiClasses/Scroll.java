@@ -13,7 +13,7 @@ public class Scroll {
 
 	@PostConstruct
 	void initUI(BorderPane pane) {
-		Button b = new Button("in Alarms");
+		Button b = new Button("in Scroll");
 		pane.setCenter(b);
 	}
 }

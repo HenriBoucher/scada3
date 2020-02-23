@@ -13,6 +13,8 @@ public class Alarms {
 	
 	@PostConstruct
 	void initUI(BorderPane pane) {
+		System.err.println("In Alarms.java");
+		System.err.println("scadaAlarm = " + scadaSystem.getScadaAlarm());
 		Button b = new Button("in Alarms");
 		pane.setCenter(b);
 	}
