@@ -3,7 +3,7 @@ Bundle-ManifestVersion: 2
 Bundle-Name: Scadasystem
 Bundle-SymbolicName: com.se.pipeline.scadasystem
 Bundle-Version: 1.0.0.qualifier
-Bundle-Activator: com.se.pipeline.scadasystem.Activator
+Bundle-Activator: com.se.pipeline.scadasystem.ScadaSystem
 Bundle-Vendor: SE
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Automatic-Module-Name: com.se.pipeline.scadasystem
