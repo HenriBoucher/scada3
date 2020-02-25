@@ -1,13 +1,23 @@
 package com.se.pipeline.scadaalarm;
 
 import org.eclipse.e4.core.di.annotations.Creatable;
-import org.osgi.service.component.ComponentContext;
+import org.osgi.framework.BundleActivator;
+import org.osgi.framework.BundleContext;
 
 @Creatable
-public class ScadaAlarm {
-	
-    protected void activate(ComponentContext componentContext) {}
+public class ScadaAlarm implements BundleActivator {
+	private static BundleContext context;
 
-    protected void deactivate(ComponentContext componentContext) {}
+	static BundleContext getContext() {
+		return context;
+	}
+
+	public void start(BundleContext bundleContext) throws Exception {
+		ScadaAlarm.context = bundleContext;
+	}
+
+	public void stop(BundleContext bundleContext) throws Exception {
+		ScadaAlarm.context = null;
+	}
 
 }

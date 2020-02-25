@@ -1,13 +1,22 @@
 package com.se.pipeline.scadahistory;
 
 import org.eclipse.e4.core.di.annotations.Creatable;
-import org.osgi.service.component.ComponentContext;
+import org.osgi.framework.BundleActivator;
+import org.osgi.framework.BundleContext;
 
 @Creatable
-public class ScadaHistory {
-	
-    protected void activate(ComponentContext componentContext) {}
+public class ScadaHistory implements BundleActivator {
+	private static BundleContext context;
 
-    protected void deactivate(ComponentContext componentContext) {}
+	static BundleContext getContext() {
+		return context;
+	}
 
+	public void start(BundleContext bundleContext) throws Exception {
+		ScadaHistory.context = bundleContext;
+	}
+
+	public void stop(BundleContext bundleContext) throws Exception {
+		ScadaHistory.context = null;
+	}
 }
