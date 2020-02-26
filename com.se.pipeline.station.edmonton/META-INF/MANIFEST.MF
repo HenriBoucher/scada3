@@ -3,7 +3,7 @@ Bundle-ManifestVersion: 2
 Bundle-Name: Edmonton
 Bundle-SymbolicName: com.se.pipeline.station.edmonton
 Bundle-Version: 1.0.0.qualifier
-Bundle-Activator: com.se.pipeline.station.edmonton.Activator
+Bundle-Activator: com.se.pipeline.station.edmonton.Edmonton
 Bundle-Vendor: SE
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Automatic-Module-Name: com.se.pipeline.station.edmonton
@@ -12,4 +12,5 @@ Bundle-ActivationPolicy: lazy
 Require-Bundle: org.eclipse.equinox.common;bundle-version="3.10.100",
  org.eclipse.e4.core.services;bundle-version="2.1.200",
  javax.inject;bundle-version="1.0.0",
- com.se.pipeline.scadaalarm;bundle-version="1.0.0"
+ com.se.pipeline.scadaalarm;bundle-version="1.0.0",
+ com.se.pipeline.scadastation;bundle-version="1.0.0"

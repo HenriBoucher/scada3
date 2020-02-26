@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Scadastation
+Bundle-SymbolicName: com.se.pipeline.scadastation
+Bundle-Version: 1.0.0.qualifier
+Bundle-Vendor: SE
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Automatic-Module-Name: com.se.pipeline.scadastation
+Import-Package: org.osgi.framework;version="1.3.0"
+Bundle-ActivationPolicy: lazy
+Export-Package: com.se.pipeline.scadastation

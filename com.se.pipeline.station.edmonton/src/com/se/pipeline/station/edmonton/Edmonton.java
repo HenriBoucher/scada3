@@ -6,7 +6,7 @@ import org.eclipse.e4.core.services.events.IEventBroker;
 import org.osgi.framework.BundleActivator;
 import org.osgi.framework.BundleContext;
 
-public class Activator implements BundleActivator {
+public class Edmonton extends com.se.pipeline.scadastation.ScadaStation implements BundleActivator {
 
 	private static BundleContext context;
 	@Inject
@@ -18,11 +18,13 @@ public class Activator implements BundleActivator {
 	}
 
 	public void start(BundleContext bundleContext) throws Exception {
-		Activator.context = bundleContext;
+		super.stationName = "Edmonton";
+		System.out.println(super.stationName);
+		Edmonton.context = bundleContext;
 	}
 
 	public void stop(BundleContext bundleContext) throws Exception {
-		Activator.context = null;
+		Edmonton.context = null;
 	}
 
 }
