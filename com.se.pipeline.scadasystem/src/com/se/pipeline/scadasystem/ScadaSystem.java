@@ -5,10 +5,10 @@ import java.util.Dictionary;
 import javax.inject.Inject;
 
 import org.eclipse.e4.core.di.annotations.Creatable;
+import org.osgi.framework.Bundle;
 import org.osgi.framework.BundleActivator;
 import org.osgi.framework.BundleContext;
 import org.osgi.framework.Constants;
-import org.osgi.service.component.ComponentContext;
 
 @Creatable
 public class ScadaSystem implements BundleActivator {
@@ -33,9 +33,19 @@ public class ScadaSystem implements BundleActivator {
     	String requireBundle = headers.get(Constants.REQUIRE_BUNDLE);
     	String[] bundles = requireBundle.split("\\s*,\\s*");
     	for (String bundle : bundles) {
-    		if (bundle.contains(".station.")) {
+    		if (bundle.contains(".station.edmonton")) {
     			System.out.println(bundle);
     		}
+    	}
+    	Bundle[] allBundles = bundleContext.getBundles();
+    	for (Bundle bundle : allBundles) {
+    		if (bundle.getSymbolicName().contains(".station.edmonton")) {
+    			Dictionary<String, String> headers2 = bundle.getHeaders();
+    			String thisClass = headers2.get(Constants.BUNDLE_ACTIVATOR);
+    			System.err.println("About to loadClass with bundle = " + bundle + " and class = " + thisClass);
+    			bundle.loadClass(thisClass);
+    		};
+//    		System.out.println ("-" + bundle.getSymbolicName() + "-");
     	}
     }
     
