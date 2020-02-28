@@ -3,7 +3,7 @@ Bundle-ManifestVersion: 2
 Bundle-Name: Gretna
 Bundle-SymbolicName: com.se.pipeline.station.gretna
 Bundle-Version: 1.0.0.qualifier
-Bundle-Activator: com.se.pipeline.station.gretna.Activator
+Bundle-Activator: com.se.pipeline.station.gretna.Gretna
 Bundle-Vendor: SE
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Automatic-Module-Name: com.se.pipeline.station.gretna

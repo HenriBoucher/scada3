@@ -3,7 +3,7 @@ Bundle-ManifestVersion: 2
 Bundle-Name: Station6
 Bundle-SymbolicName: com.se.pipeline.station.station6
 Bundle-Version: 1.0.0.qualifier
-Bundle-Activator: com.se.pipeline.station.station6.Activator
+Bundle-Activator: com.se.pipeline.station.station6.Station6
 Bundle-Vendor: SE
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Automatic-Module-Name: com.se.pipeline.station.station6

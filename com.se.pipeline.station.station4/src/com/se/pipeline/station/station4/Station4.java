@@ -1,4 +1,4 @@
-package com.se.pipeline.station.station3;
+package com.se.pipeline.station.station4;
 
 import javax.inject.Inject;
 
@@ -6,7 +6,7 @@ import org.eclipse.e4.core.services.events.IEventBroker;
 import org.osgi.framework.BundleActivator;
 import org.osgi.framework.BundleContext;
 
-public class Activator implements BundleActivator {
+public class Station4 implements BundleActivator {
 
 	private static BundleContext context;
 	@Inject
@@ -17,11 +17,11 @@ public class Activator implements BundleActivator {
 	}
 
 	public void start(BundleContext bundleContext) throws Exception {
-		Activator.context = bundleContext;
+		Station4.context = bundleContext;
 	}
 
 	public void stop(BundleContext bundleContext) throws Exception {
-		Activator.context = null;
+		Station4.context = null;
 	}
 
 }

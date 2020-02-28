@@ -3,7 +3,7 @@ Bundle-ManifestVersion: 2
 Bundle-Name: Hardisty
 Bundle-SymbolicName: com.se.pipeline.station.hardisty
 Bundle-Version: 1.0.0.qualifier
-Bundle-Activator: com.se.pipeline.stattion.hardisty.Activator
+Bundle-Activator: com.se.pipeline.stattion.hardisty.Hardisty
 Bundle-Vendor: SE
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Automatic-Module-Name: com.se.pipeline.stattion.hardisty

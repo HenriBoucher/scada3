@@ -3,7 +3,7 @@ Bundle-ManifestVersion: 2
 Bundle-Name: Station4
 Bundle-SymbolicName: com.se.pipeline.station.station4
 Bundle-Version: 1.0.0.qualifier
-Bundle-Activator: com.se.pipeline.station.station4.Activator
+Bundle-Activator: com.se.pipeline.station.station4.Station4
 Bundle-Vendor: SE
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Automatic-Module-Name: com.se.pipeline.station.station4
