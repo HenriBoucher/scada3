@@ -30,6 +30,6 @@ public class Edmonton extends com.se.pipeline.scadastation.ScadaStation implemen
 	}
 	
 	{
-		iSetStationName("Edmonton");
+			iSetStationName("Edmonton");
 	}
 }
