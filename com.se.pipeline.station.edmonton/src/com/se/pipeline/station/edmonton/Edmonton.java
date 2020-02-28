@@ -17,7 +17,7 @@ public class Edmonton extends com.se.pipeline.scadastation.ScadaStation implemen
 		return context;
 	}
 	public void iSetStationName(String name) {
-		super.setStationName("edmonton");
+		super.setStationName(name);
 	}
 	public void start(BundleContext bundleContext) throws Exception {
 //		super.stationName = "Edmonton";
@@ -28,5 +28,8 @@ public class Edmonton extends com.se.pipeline.scadastation.ScadaStation implemen
 	public void stop(BundleContext bundleContext) throws Exception {
 		Edmonton.context = null;
 	}
-
+	
+	{
+		iSetStationName("Edmonton");
+	}
 }
