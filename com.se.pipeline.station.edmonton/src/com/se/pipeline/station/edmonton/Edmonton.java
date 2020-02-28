@@ -16,7 +16,9 @@ public class Edmonton extends com.se.pipeline.scadastation.ScadaStation implemen
 	static BundleContext getContext() {
 		return context;
 	}
-
+	public void iSetStationName(String name) {
+		super.setStationName("edmonton");
+	}
 	public void start(BundleContext bundleContext) throws Exception {
 //		super.stationName = "Edmonton";
 //		System.out.println(super.stationName);

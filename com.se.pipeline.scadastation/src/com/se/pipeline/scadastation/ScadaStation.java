@@ -3,11 +3,11 @@ package com.se.pipeline.scadastation;
 import java.net.InetAddress;
 import java.net.UnknownHostException;
 
-public class ScadaStation implements IRequiredSetters {
+public class ScadaStation {
 	
 	private String stationName = new String();
 	
-	public void SetStationName(String stationName) {
+	public void setStationName(String stationName) {
 		this.stationName = stationName;
 	}
 	
